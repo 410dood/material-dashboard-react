@@ -1,8 +1,8 @@
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import TableList from "views/TableList/TableList.jsx";
-import Typography from "views/Typography/Typography.jsx";
-import Icons from "views/Icons/Icons.jsx";
+// import Typography from "views/Typography/Typography.jsx";
+// import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 
@@ -20,7 +20,7 @@ const dashboardRoutes = [
   {
     path: "/dashboard",
     sidebarName: "Dashboard",
-    navbarName: "Material Dashboard",
+    navbarName: "Dashboard",
     icon: Dashboard,
     component: DashboardPage
   },
@@ -38,20 +38,20 @@ const dashboardRoutes = [
     icon: ContentPaste,
     component: TableList
   },
-  {
-    path: "/typography",
-    sidebarName: "Typography",
-    navbarName: "Typography",
-    icon: LibraryBooks,
-    component: Typography
-  },
-  {
-    path: "/icons",
-    sidebarName: "Icons",
-    navbarName: "Icons",
-    icon: BubbleChart,
-    component: Icons
-  },
+  // {
+  //   path: "/typography",
+  //   sidebarName: "Typography",
+  //   navbarName: "Typography",
+  //   icon: LibraryBooks,
+  //   component: Typography
+  // },
+  // {
+  //   path: "/icons",
+  //   sidebarName: "Icons",
+  //   navbarName: "Icons",
+  //   icon: BubbleChart,
+  //   component: Icons
+  // },
   {
     path: "/maps",
     sidebarName: "Maps",

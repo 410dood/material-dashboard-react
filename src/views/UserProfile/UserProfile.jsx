@@ -9,7 +9,7 @@ import {
   ItemGrid
 } from "components";
 
-import avatar from "assets/img/faces/marc.jpg";
+import avatar from "assets/img/faces/doody.png";
 
 function UserProfile({ ...props }) {
   return (
@@ -129,8 +129,8 @@ function UserProfile({ ...props }) {
           <ProfileCard
             avatar={avatar}
             subtitle="CEO / CO-FOUNDER"
-            title="Alec Thompson"
-            description="Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is..."
+            title="MOM"
+            description="Don't be scared of the truth because we need to eat at HoHo's like 3 times a week to play jazz and make a ballin music video"
             footer={
               <Button color="primary" round>
                 Follow

@@ -30,7 +30,7 @@ class Notifications extends React.Component {
     x[place] = true;
     this.setState(x);
     setTimeout(
-      function() {
+      function () {
         x[place] = false;
         this.setState(x);
       }.bind(this),
@@ -43,22 +43,19 @@ class Notifications extends React.Component {
         cardTitle="Notifications"
         cardSubtitle={
           <P>
-            Handcrafted by our friends from{" "}
+            {/* Handcrafted by our friends from{" "}
             <A target="_blank" href="https://material-ui-next.com/">
-              Material UI
+              General Assembly
             </A>{" "}
             and styled by{" "}
             <A target="_blank" href="https://www.creative-tim.com/">
-              Creative Tim
-            </A>. Please checkout the{" "}
-            <A href="#pablo" target="_blank">
-              full documentation
-            </A>.
+              LEAVE - BD DB RK
+            </A>. */}
           </P>
         }
         content={
           <div>
-            <Grid container>
+            {/* <Grid container>
               <ItemGrid xs={12} sm={12} md={6}>
                 <h5>Notifications Style</h5>
                 <br />
@@ -249,7 +246,7 @@ class Notifications extends React.Component {
                   </ItemGrid>
                 </Grid>
               </ItemGrid>
-            </Grid>
+            </Grid> */}
           </div>
         }
       />

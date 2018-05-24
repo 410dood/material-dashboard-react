@@ -36,7 +36,7 @@ class App extends React.Component {
     return this.props.location.pathname !== "/maps";
   }
   componentDidMount() {
-    if(navigator.platform.indexOf('Win') > -1){
+    if (navigator.platform.indexOf('Win') > -1) {
       // eslint-disable-next-line
       const ps = new PerfectScrollbar(this.refs.mainPanel);
     }
@@ -50,7 +50,7 @@ class App extends React.Component {
       <div className={classes.wrapper}>
         <Sidebar
           routes={dashboardRoutes}
-          logoText={"Creative Tim"}
+          logoText={"LEAVE - BD DB RK"}
           logo={logo}
           image={image}
           handleDrawerToggle={this.handleDrawerToggle}
@@ -70,8 +70,8 @@ class App extends React.Component {
               <div className={classes.container}>{switchRoutes}</div>
             </div>
           ) : (
-            <div className={classes.map}>{switchRoutes}</div>
-          )}
+              <div className={classes.map}>{switchRoutes}</div>
+            )}
           {this.getRoute() ? <Footer /> : null}
         </div>
       </div>

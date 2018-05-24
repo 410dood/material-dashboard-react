@@ -1,7 +1,7 @@
 {
   "name": "material-dashboard-react",
   "version": "1.2.0",
-  "description": "Material Dashboard React. Coded by Creative Tim",
+  "description": "Leave DashBoard",
   "private": false,
   "main": "index.js",
   "dependencies": {
@@ -23,17 +23,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-dashboard-react.git"
+    "url": "git+https://github.com/410dood/material-dashboard-react"
   },
-  "keywords": [],
-  "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
-  },
-  "homepage": "https://creativetimofficial.github.io/material-dashboard-react/#/dashboard"
+  "homepage": "https://creativetimofficial.github.io/material-dashboard-react/#/dashboard",
+  "devDependencies": {
+    "gh-pages": "^1.1.0"
+  }
 }

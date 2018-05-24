@@ -52,40 +52,40 @@ class Dashboard extends React.Component {
             <StatsCard
               icon={ContentCopy}
               iconColor="orange"
-              title="Used Space"
-              description="49/50"
-              small="GB"
+              title="Destinations"
+              description="3/50"
+              small="routes"
               statIcon={Warning}
               statIconColor="danger"
-              statLink={{ text: "Get More Space...", href: "#pablo" }}
+              statLink={{ text: "See your routes...", href: "#pablo" }}
             />
           </ItemGrid>
           <ItemGrid xs={12} sm={6} md={3}>
             <StatsCard
               icon={Store}
               iconColor="green"
-              title="Revenue"
-              description="$34,245"
+              title="Money Saved"
+              description="$26"
               statIcon={DateRange}
-              statText="Last 24 Hours"
+              statText="Last 17 days"
             />
           </ItemGrid>
           <ItemGrid xs={12} sm={6} md={3}>
             <StatsCard
               icon={InfoOutline}
               iconColor="red"
-              title="Fixed Issues"
-              description="75"
+              title="Traffic issues"
+              description="5"
               statIcon={LocalOffer}
-              statText="Tracked from Github"
+              statText="Tracked by user"
             />
           </ItemGrid>
           <ItemGrid xs={12} sm={6} md={3}>
             <StatsCard
               icon={Accessibility}
               iconColor="blue"
-              title="Followers"
-              description="+245"
+              title="Other users"
+              description="+15"
               statIcon={Update}
               statText="Just Updated"
             />
@@ -104,7 +104,7 @@ class Dashboard extends React.Component {
                 />
               }
               chartColor="green"
-              title="Daily Sales"
+              title="On-time-arrivals"
               text={
                 <span>
                   <span className={this.props.classes.successText}>
@@ -113,7 +113,7 @@ class Dashboard extends React.Component {
                     />{" "}
                     55%
                   </span>{" "}
-                  increase in today sales.
+                  increase in on time arrivals.
                 </span>
               }
               statIcon={AccessTime}
@@ -133,10 +133,10 @@ class Dashboard extends React.Component {
                 />
               }
               chartColor="orange"
-              title="Email Subscriptions"
-              text="Last Campaign Performance"
+              title="Routes Added"
+              text="Performance"
               statIcon={AccessTime}
-              statText="campaign sent 2 days ago"
+              statText="Route added 2 days ago"
             />
           </ItemGrid>
           <ItemGrid xs={12} sm={12} md={4}>
@@ -151,14 +151,14 @@ class Dashboard extends React.Component {
                 />
               }
               chartColor="red"
-              title="Completed Tasks"
-              text="Last Campaign Performance"
+              title="Completed Trips"
+              text="Trip Performance"
               statIcon={AccessTime}
-              statText="campaign sent 2 days ago"
+              statText="c"
             />
           </ItemGrid>
         </Grid>
-        <Grid container>
+        {/* <Grid container>
           <ItemGrid xs={12} sm={12} md={6}>
             <TasksCard />
           </ItemGrid>
@@ -181,7 +181,7 @@ class Dashboard extends React.Component {
               }
             />
           </ItemGrid>
-        </Grid>
+        </Grid> */}
       </div>
     );
   }

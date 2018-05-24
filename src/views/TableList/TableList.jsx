@@ -8,57 +8,25 @@ function TableList({ ...props }) {
     <Grid container>
       <ItemGrid xs={12} sm={12} md={12}>
         <RegularCard
-          cardTitle="Simple Table"
-          cardSubtitle="Here is a subtitle for this table"
+          cardTitle="Destination Table"
+          cardSubtitle="Overview of Routes"
           content={
             <Table
               tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
+              tableHead={["Name", "Notifications", "Start", "End"]}
               tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                ["Work", "on", "1111 Industry Ave", "1111 Industry Ave"],
+                ["Vail", "on", "1111 Industry Ave", "1111 Industry Ave"],
+                ["Joe's House", "off", "1111 Industry Ave", "1111 Industry Ave"],
+                ["Dollar Scoops", "on", "1111 Industry Ave", "1111 Industry Ave"],
+                ["Industry", "on", "1111 Industry Ave", "1111 Industry Ave"],
+                ["Heavydoody Enterprises", "off", "1111 Industry Ave", "1111 Industry Ave"]
               ]}
             />
           }
         />
       </ItemGrid>
-      <ItemGrid xs={12} sm={12} md={12}>
-        <RegularCard
-          plainCard
-          cardTitle="Table on Plain Background"
-          cardSubtitle="Here is a subtitle for this table"
-          content={
-            <Table
-              tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-                [
-                  "4",
-                  "Philip Chaney",
-                  "$38,735",
-                  "Korea, South",
-                  "Overland Park"
-                ],
-                [
-                  "5",
-                  "Doris Greene",
-                  "$63,542",
-                  "Malawi",
-                  "Feldkirchen in Kärnten"
-                ],
-                ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
-              ]}
-            />
-          }
-        />
-      </ItemGrid>
+
     </Grid>
   );
 }
